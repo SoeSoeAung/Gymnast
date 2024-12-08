@@ -149,7 +149,7 @@
             <input type="text" class="form-control-lg" placeholder="Your Email">
             {% for s in subscribe %}
             <div class="input-group-append">
-                <button class="btn btn-primary" type="submit" ><a href="{{ s.imaeg.url }}" class="subscribe-button">Subscribe</a>
+                <button class="btn-btn-success" type="submit" ><a href="{{ s.imaeg.url }}" class="subscribe-button">Subscribe</a>
             </div>
             {% endfor %}
         </div>
@@ -520,7 +520,7 @@
                 <img width="80" height="80" class="rounded-circle bg-dark p-2" src="{{ c.image.url }}" alt="Image">
                 <div class="testimonial-text">
                     <h3 class="text-primary font-weight-bold">{{ c.name }}</h3>
-                    <h4>{{ c.title }}</h4>
+                    <h4 class="text-primary">{{ c.title }}</h4>
                     <p>
                        {{ c.description }}
                     </p>
